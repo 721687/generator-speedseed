@@ -2,6 +2,33 @@
 - [Spanish](#spanish)
 
 ## English
+### v.0.22.0
+    - Add webpack for compilers JS
+    - Add use of import ES6
+    - Create templates is now easier
+    - delete speedseed clean
+    - Files precompile to -tmp
+    - Improved use of jsx and ts
+    - speedseed cli now displays the internal command
+    - speedseed component it does not work correctly
+
+### v.0.21.4
+    - Fix: error in task js
+    - Fix: eslint complexity
+
+### v.0.21.3
+    - Fix: Copy assets dist task
+    - Fix: It is not required to always add the dependencies of Babel
+    - Added alias speedseed i like speedseed install
+
+### v.0.21.2
+    - Fix: speedseed update
+    - Add speedseed in .gitattributes
+
+### v.0.21.1
+    - Fix: README
+    - Compile all jade files when save
+
 ### v.0.21.0
     - Assets and vendor read in app/ instead build/
     - Modified speedseed clean [dir]
@@ -33,7 +60,7 @@
 
 ### v.0.19.0
     - Add template speedseed-angular2-whitespace
-    - More flexibility and ease to change the core-config.json 
+    - More flexibility and ease to change the core-config.json
     - Update http-proxy-middleware to 0.17.0
     - Update AngularJS to 1.5.7
     - Update Angular2 to 2.0.0-rc.4
@@ -44,7 +71,7 @@
     - Fix: call to local gulp since npm run: ./node_modules/gulp/bin/gulp.js to gulp
 
 ### v.0.18.0
-    - Fix: .css compile to .tmp, include minified to jade
+    - Fix: .css compile to -tmp, include minified to jade
     - Fix: No need global gulp
     - Fix: npm run component in Polymer
     - Add npm run serve
@@ -65,11 +92,11 @@
     - Simplifies core-config.js
 
 ### v.0.16.0
-    - Fix: npm run test 
+    - Fix: npm run test
     - Allow choice options to show in templates
     - First time "yo speedseed" install template, following times "yo speedseed" update
     - Require Node >= 6.0.0
-    - Simplifies creating templates 
+    - Simplifies creating templates
     - Use lib speedseed common all templates
 
 ### v.0.15.5
@@ -131,7 +158,7 @@
     - Copy the node_modules selected a -build/vendor, configure in .core-config.json, property copy.node_modules: []
     - Delete ss- in tasks
     - Rename .core-config.js to .core.config.json
-    - Rename npm run ss-test to npm run spec 
+    - Rename npm run ss-test to npm run spec
     - Use browsersync for api test, confgure en .core-config.js, property server
 
 ### v.0.12.1
@@ -153,21 +180,21 @@
     - package.json add core properties when update insead of overwrite the file
     - package.json have only the plugins to use
     - with in little fix .jsx allow inject props object in attributes jade
-        - div(lala!='{this.lolo}') 
+        - div(lala!='{this.lolo}')
         - <div lala={this.lolo}></div>
 
     - npm run ss-build compile and launch server in -build
     - npm run ss-build-open compile, launch server and open navigator in -build
     - npm run ss-dist compile minimizied in -dist
     - npm run ss-dist-open compile minimizied, launch server and open navigator in -dist
-    
+
     - Modifing includes in .js. Ej with template .name.html:
         - Previous: {%= include('dir/relative', 'name', 'html') %}
         - Now: {%= include(__dirname, '-name.html') %}
 
     - Simplifing includes inline. Ej with file .tpl.jade:
         - Previous: include -.tpl.html
-        - Now: include -tpl.hml 
+        - Now: include -tpl.hml
 
 ### v.0.10.2
     - More variables in core-config.js
@@ -180,7 +207,7 @@
 ### v.0.10.0
     - Add Bower
     - Add Polymer Vulcanize, with external files minimizied!
-    - Add npm run ss-indent for indent files 
+    - Add npm run ss-indent for indent files
     - Add VanillaJS
     - In .build vendor to _vendor
     - More config in core-config.js
@@ -248,6 +275,33 @@
     - Restart changelog in 2 languages
 
 ## Spanish
+### v.0.22.0
+    - Añade webpack para compiladores de JS
+    - Añade uso de import ES6
+    - Borra speedseed clean
+    - Crear plantillas es ahora más fácil
+    - Ficheros precompilan a -tmp
+    - Mejorado el uso de jsx y ts
+    - speedseed cli ahora muestra el comando interno
+    - speedseed component no funciona correctamente
+
+### v.0.21.4
+    - Arregla: error en tarea js
+    - Arregla: eslint complexity
+
+### v.0.21.3
+    - Arregla: Copia assets en tarea dist
+    - Arregla: No es requerido añadir siempre las dependencias de Babel
+    - Añade alias speedseed i como speedseed install
+
+### v.0.21.2
+    - Arregla: speedseed update
+    - Añade speedseed en .gitattributes
+
+### v.0.21.1
+    - Arregla: README
+    - Compila todos los ficheros jade cuando guardas
+
 ### v.0.21.0
     - Assets y vendor leídos en app/ en vez de en build/
     - Modificado speedseed clean [dir]
@@ -284,7 +338,7 @@
     - Actualiza Polymer a 1.6.0
     - Actualiza React a 15.2.1
     - Añade plantilla speedseed-angular2-whitespace
-    - Más flexibilid y fácil de cambiar el core-config.json 
+    - Más flexibilid y fácil de cambiar el core-config.json
 
 ### v.0.18.1
     - Arregla: llamada a gulp local desde npm run: ./node_modules/gulp/bin/gulp.js a gulp
@@ -312,11 +366,11 @@
     - Simplifica core-config.js
 
 ### v.0.16.0
-    - Arregla: npm run test 
+    - Arregla: npm run test
     - Permite elegir opciones a mostrar en plantillas
     - Primera vez "yo speedseed" instala plantilla, siguientes veces "yo speedseed" actualiza
     - Requiere Node >= 6.0.0
-    - Simplifica la creación de plantillas 
+    - Simplifica la creación de plantillas
     - Usa lib speedseed común a todas las plantillas
 
 ### v.0.15.5
@@ -378,7 +432,7 @@
     - Borra ss- in tasks
     - Copia los node_modules seleccionados en -build/vendor, configurable en .core-config.json, propiedad copy.node_modules: []
     - Renombra .core-config.js a .core.config.json
-    - Renombra npm run ss-test a npm run spec 
+    - Renombra npm run ss-test a npm run spec
     - Usa browsersync para api de pruebas, configurable en .core-config.js, propiedad server
 
 ### v.0.12.1
@@ -396,7 +450,7 @@
     - .core-config.json añade propiedades cuando actualizas en lugar de sobreescribir el archivo
     - Añade documentación de carpetas y actualiza includes en README
     - Con un pequeño arreglo .jsx permiten inyectar propiedades de objetos en atributos jade
-        - div(lala!='{this.lolo}') 
+        - div(lala!='{this.lolo}')
         - <div lala={this.lolo}></div>
 
     - Multiples cambios en núcleo para añadir limpieza y rendimiento
@@ -414,7 +468,7 @@
 
     - Simplificando includes enline. Ej con fichero .tpl.jade:
         - Antes: include -.tpl.html
-        - Antes: include -tpl.hml 
+        - Antes: include -tpl.hml
 
 ### v.0.10.1
     - Por defecto la carpeta de archivos multimedia es assets
